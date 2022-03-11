@@ -5,7 +5,7 @@ function Pagination() {
     const [data,setData] = useState([])
 
     const [currentPage,setCurrentPage] = useState(1)
-    const [itemsPerPage,setItemsPerPage] = useState(10)
+    const [itemsPerPage,setItemsPerPage] = useState(5)
 
     const[pageNumberLimit,setPageNumberLimit] = useState(5)
     const[maxPageNumberLimit,setMaxNumberLimit] = useState(5)
@@ -87,6 +87,7 @@ function Pagination() {
                 setData(json)
             }
             )
+        return(()=>{alert('welcome')})
     },[])
 
     console.log(data)
@@ -102,7 +103,7 @@ function Pagination() {
         }
         <ul className='pageNumbers'>
             {
-                currentPage<=pageNumberLimit
+                currentPage<=1
                 ? null
                 :
             <li onClick={handlePrevBtn}>
