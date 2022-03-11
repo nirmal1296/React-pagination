@@ -1,0 +1,45 @@
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pageNumbers li {
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.pageNumbers li.active {
+  background-color: black;
+  color: white;
+}
+
+.pageNumbers li button {
+  background-color: transparent;
+  border: none;
+  font: 1.5rem;
+  cursor: pointer;
+}
+
+.pageNumbers li button:hover {
+  background-color: black;
+  color: white;
+}
+
+.pageNumbers li button:focus {
+  outline: none;
+}
+
+.todo {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+.todo li {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
